@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SuiteCRM Test Suite" parallel="false">
+    <listeners>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+    </listeners>
+
+    <test name="Account Tests">
+        <classes>
+            <class name="tests.CreateAccountTest"/>
+        </classes>
+    </test>
+
+    <test name="Contact Tests">
+        <classes>
+            <class name="tests.CreateContactTest"/>
+        </classes>
+    </test>
+
+    <test name="Task Tests">
+        <classes>
+            <class name="tests.CreateTaskTest"/>
+        </classes>
+    </test>
+</suite>
